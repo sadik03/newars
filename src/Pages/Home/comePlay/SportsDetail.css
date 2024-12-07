@@ -1,0 +1,88 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Ensuring readability */
+  background-color: #f4f4f9; /* Consistent background */
+}
+
+/* General Container Styles */
+.sports-detail-container {
+  padding: 40px;
+  max-width: 1200px; /* Wider max-width for landscape */
+  margin: 20px auto; /* Centering in the view */
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section Styles */
+.header-container {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header-container h1 {
+  font-size: 3em; /* Larger font size for better visibility */
+}
+
+.header-container p {
+  font-size: 1.5em; /* Larger paragraph for better readability */
+}
+
+/* Form Section Styles */
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  border-top: 5px solid #5cb85c;
+  margin-top: 30px;
+  box-shadow: 0 8px 16px #5cb85c;
+  display: flex; /* Using flex to manage layout */
+  flex-wrap: wrap; /* Allowing wrapping */
+  justify-content: space-between; /* Distributing space between elements */
+}
+
+.form-container label {
+  width: 48%; /* Adjusting label width for landscape */
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="date"],
+.form-container input[type="time"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Button Styles */
+.register-button {
+  width: 100%; /* Full width for button */
+  padding: 15px 0; /* Larger padding */
+  font-size: 20px; /* Larger font for better interaction */
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.9) sepia(1) saturate(5) hue-rotate(-100deg); /* Attempt to change color, works only in Chrome */
+}
+
+/* Adjustments for smaller screens within landscape view */
+@media (max-width: 1024px) {
+  .form-container label {
+    width: 100%; /* Full width for smaller landscape views */
+  }
+}

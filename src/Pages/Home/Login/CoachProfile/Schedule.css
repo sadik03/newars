@@ -1,0 +1,55 @@
+/* Schedule.css */
+
+/* General styles */
+.schedule-container {
+    overflow-x: auto; /* Allows horizontal scrolling on small devices */
+}
+
+/* Table styles */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .schedule-table-wrapper {
+        display: block;
+        overflow-x: auto; /* Horizontal scrolling on small devices */
+    }
+
+    .schedule-table thead {
+        display: none; /* Hide table headers on small devices */
+    }
+
+    .schedule-table, .schedule-table tbody, .schedule-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .schedule-table tr {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .schedule-table td {
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        background-color: #f9fafb;
+        text-align: center; /* Center text horizontally */
+    }
+
+    .schedule-table td::before {
+        content: attr(data-label); /* Adds a label before each cell */
+        font-weight: bold;
+        color: #6b7280;
+        margin-right: 0.5rem; /* Space between label and data */
+    }
+}

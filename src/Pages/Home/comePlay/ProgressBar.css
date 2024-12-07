@@ -1,0 +1,97 @@
+/* ProgressBar.css */
+
+.progress-bar-container {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  flex-grow: 1; /* Allows each step to grow equally */
+}
+
+.progress-step .step-number {
+  background-color: #ddd;
+  color: #333;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.progress-step .step-label {
+  font-size: 12px;
+  color: #555;
+}
+
+.progress-step.active .step-number {
+  background-color: #4caf50; /* Active step color */
+  color: white;
+}
+
+.progress-step.active .step-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.progress-indicator {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 4px;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .progress-step .step-number {
+    width: 25px; /* Smaller step number for mobile */
+    height: 25px;
+  }
+
+  .progress-step .step-label {
+    font-size: 10px; /* Smaller font size for labels on mobile */
+  }
+
+  .progress-bar-container {
+    padding: 5px 0; /* Reduce padding on smaller screens */
+  }
+
+  .progress-indicator {
+    top: 12px; /* Adjust top position to align with smaller step numbers */
+  }
+}
+
+@media (max-width: 480px) {
+  .progress-bar-container {
+    flex-direction: row; /* Stack progress steps vertically on very small screens */
+    align-items: stretch;
+  }
+
+  .progress-step {
+    margin-bottom: 20px; /* Add spacing between stacked steps */
+  }
+
+  .progress-indicator {
+    position: static;
+    width: 100%; /* Full width indicator for vertical layout */
+    height: 6px; /* Make indicator thicker for better visibility */
+    margin-top: 5px; /* Space from the last step */
+  }
+}

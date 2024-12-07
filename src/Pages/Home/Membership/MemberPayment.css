@@ -1,0 +1,9 @@
+/* MemberPayment.css */
+.background-blur {
+    
+  
+
+    z-index: -1;
+    background-color: #f30000; /* Fallback background color */
+  }
+  

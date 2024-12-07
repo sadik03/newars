@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Sports Training with Technology",
+      "description": "Customized training plans designed to enhance skills through advanced technology, focusing on physical and mental development.",
+      "img": "https://i.postimg.cc/MGKDx9Nw/DALL-E-2024-09-28-23-44-47-A-landscape-image-showcasing-Sports-Training-with-Technology-featuri.webp"
+    },
+    {
+      "id": 2,
+      "title": "Sports Event",
+      "description": "Participate in or attend various sports events, bringing communities together for friendly competition and skill showcase.",
+      "img": "https://i.postimg.cc/yYP8MnHs/DALL-E-2024-09-28-23-30-08-A-landscape-thumbnail-image-for-Sports-Event-showcasing-a-variety-of.webp"
+    },
+    {
+      "id": 3,
+      "title": "Membership",
+      "description": "Exclusive membership programs that offer athletes access to premium training facilities, coaching sessions, and competitive opportunities.",
+      "img": "https://i.postimg.cc/GcyXzDQX/DALL-E-2024-09-28-23-30-06-A-landscape-thumbnail-image-for-Membership-showcasing-a-modern-gym-w.webp"
+    },
+    {
+      "id": 4,
+      "title": "Come and Play",
+      "description": "Open sessions for athletes of all ages and skill levels to engage in casual play, build community, and have fun while staying active.",
+      "img": "https://i.postimg.cc/mDvSGB7z/DALL-E-2024-09-28-23-30-03-A-landscape-thumbnail-image-for-Come-and-Play-featuring-people-of-al.webp"
+    },
+    {
+      "id": 5,
+      "title": "Sport Camp (Winter and Summer)",
+      "description": "Intensive sports camps held during winter and summer, designed to help athletes improve their skills, fitness, and strategy in a fun and competitive environment.",
+      "img": "https://i.postimg.cc/x1NMnWTL/DALL-E-2024-09-28-23-42-19-A-landscape-thumbnail-image-for-Sport-Camp-Winter-and-Summer-featu.webp"
+    }
+  ]
+}

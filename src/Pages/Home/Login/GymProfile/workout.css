@@ -1,0 +1,34 @@
+/* WorkoutPlan.css */
+
+/* General styles */
+.workout-plan-container {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .workout-plan-container {
+      text-align: center; /* Center-align text on small devices */
+    }
+  
+    .workout-plan-container ul {
+      padding-left: 0; /* Remove padding for list on small devices */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center-align list items */
+    }
+  
+    .workout-plan-container li {
+      margin-bottom: 0.5rem; /* Space between list items */
+      text-align: center; /* Center-align list item text */
+    }
+  
+    .workout-plan-container h2,
+    .workout-plan-container h3 {
+      font-size: 1.5rem; /* Adjust font size for small devices */
+    }
+  }
+  

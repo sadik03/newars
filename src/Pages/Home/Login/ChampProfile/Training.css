@@ -1,0 +1,58 @@
+.training-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .video-container, .session-container {
+    margin-bottom: 20px;
+  }
+  
+  .video-list, .session-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .video-card, .session-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1 1 calc(25% - 10px); /* 4 cards per row on large screens */
+  }
+  
+  .video-card img, .session-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-card p, .session-card p {
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .video-list, .session-list {
+      flex-direction: column;
+    }
+  
+    .video-card, .session-card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
